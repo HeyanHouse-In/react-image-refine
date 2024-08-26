@@ -1,28 +1,53 @@
-## 0.2.0 (2024-08-26)
+## 0.2.1 (2024-08-26)
 
+### 🩹 Fixes
+
+- lint
+
+- weekly release
+
+- weekly release
+
+- relase
+
+- relase
+
+- relase
+
+- relase
+
+- relase
+
+- release
+
+- release
+
+- release
+
+### ❤️ Thank You
+
+- Jigar Kachhia
+
+## 0.2.0 (2024-08-26)
 
 ### 🚀 Features
 
 - **publish:** publish relase
 
-
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Jigar Kachhia
 
 ## 0.1.1 (2024-08-26)
 
-
 ### 🚀 Features
 
 - **publish:** publish relase
-
 
 ### 🩹 Fixes
 
 - patch release for remadme.
 
-
-### ❤️  Thank You
+### ❤️ Thank You
 
 - Jigar Kachhia
