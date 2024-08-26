@@ -5,15 +5,11 @@
 
 - **publish:** publish relase
 
+
 ### 🩹 Fixes
 
 - patch release for remadme.
 
-### ❤️  Thank You
-
-- Jigar Kachhia
-
-## 0.1.0 (2024-08-26)
 
 ### ❤️  Thank You
 
