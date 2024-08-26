@@ -11,8 +11,30 @@ permissions:
   contents: read
 
 jobs:
+  check-commit-message:
+    runs-on: ubuntu-latest
+    outputs:
+      should-run: ${{ steps.check.outputs.should-run }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Get commit messages
+        id: get-commits
+        run: |
+          git fetch --prune --unshallow
+          COMMIT_MESSAGE=$(git log -1 --pretty=format:%s)
+          echo "COMMIT_MESSAGE=$COMMIT_MESSAGE" >> $GITHUB_ENV
+          if [[ "$COMMIT_MESSAGE" =~ ^chore\(release\): ]]; then
+            echo "Skipping CI due to commit message pattern."
+            echo "::set-output name=should-run::false"
+          else
+            echo "::set-output name=should-run::true"
+          fi
   main:
     runs-on: ubuntu-latest
+    needs: check-commit-message
+    if: needs.check-commit-message.outputs.should-run == 'true'
     steps:
       - uses: actions/checkout@v4
         with:
