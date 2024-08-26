@@ -1,0 +1,26 @@
+# .github/workflows/weekly-release.yml
+name: Weekly Release
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Trigger at midnight UTC every Sunday
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Tag
+        run: npx nx release
