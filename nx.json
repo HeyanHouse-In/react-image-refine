@@ -64,5 +64,16 @@
         "style": "css"
       }
     }
+  },
+  "release": {
+      "projects": ["react-image-refine"],
+      "version": {
+        "conventionalCommits": true
+      },
+      "changelog": {
+        "workspaceChangelog": {
+          "createRelease": "github"
+        }
+      }
   }
 }
