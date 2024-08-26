@@ -4,6 +4,8 @@ name: Weekly Release
 on:
   schedule:
     - cron: '0 0 * * 0' # Trigger at midnight UTC every Sunday
+  # Run manually using the GitHub UI
+  workflow_dispatch:
 
 jobs:
   release:
