@@ -1,3 +1,13 @@
+## 0.2.2 (2024-08-26)
+
+### 🩹 Fixes
+
+- remove unwanted commment ([ff93668](https://github.com/HeyanHouse-In/react-image-refine/commit/ff93668))
+
+### ❤️ Thank You
+
+- Jigar Kachhia @HeyanHouse-In
+
 ## 0.2.1 (2024-08-26)
 
 ### 🩹 Fixes
