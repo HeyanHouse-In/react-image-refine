@@ -1,3 +1,23 @@
+## 0.2.3 (2024-08-26)
+
+### 🩹 Fixes
+
+- remove unwanted commment
+
+- remove unwanted commment
+
+- remove unwanted commment
+
+- remove unwanted commment
+
+- remove unwanted commment
+
+- remove unwanted commment
+
+### ❤️ Thank You
+
+- Jigar Kachhia
+
 ## 0.2.2 (2024-08-26)
 
 ### 🩹 Fixes

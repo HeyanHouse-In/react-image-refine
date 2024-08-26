@@ -1,3 +1,18 @@
+## 0.2.3 (2024-08-26)
+
+### 🩹 Fixes
+
+- remove unwanted commment ([7726f64](https://github.com/HeyanHouse-In/react-image-refine/commit/7726f64))
+- remove unwanted commment ([0173aae](https://github.com/HeyanHouse-In/react-image-refine/commit/0173aae))
+- remove unwanted commment ([158812a](https://github.com/HeyanHouse-In/react-image-refine/commit/158812a))
+- remove unwanted commment ([9c3fae5](https://github.com/HeyanHouse-In/react-image-refine/commit/9c3fae5))
+- remove unwanted commment ([9cdddb7](https://github.com/HeyanHouse-In/react-image-refine/commit/9cdddb7))
+- remove unwanted commment ([54f99b6](https://github.com/HeyanHouse-In/react-image-refine/commit/54f99b6))
+
+### ❤️ Thank You
+
+- Jigar Kachhia @HeyanHouse-In
+
 ## 0.2.2 (2024-08-26)
 
 ### 🩹 Fixes
