@@ -14,7 +14,7 @@ jobs:
   check-commit-message:
     runs-on: ubuntu-latest
     outputs:
-      should-run: ${{ steps.check.outputs.should-run }}
+      should-run: ${{ steps.set-env.outputs.should-run }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -27,10 +27,13 @@ jobs:
           echo "COMMIT_MESSAGE=$COMMIT_MESSAGE" >> $GITHUB_ENV
           if [[ "$COMMIT_MESSAGE" =~ ^chore\(release\): ]]; then
             echo "Skipping CI due to commit message pattern."
-            echo "::set-output name=should-run::false"
+            echo "should-run=false" >> $GITHUB_ENV
           else
-            echo "::set-output name=should-run::true"
+            echo "should-run=true" >> $GITHUB_ENV
           fi
+      - name: Set output for next job
+        id: set-env
+        run: echo "should-run=$(cat $GITHUB_ENV | grep 'should-run=' | cut -d '=' -f 2)" >> $GITHUB_ENV
   main:
     runs-on: ubuntu-latest
     needs: check-commit-message
