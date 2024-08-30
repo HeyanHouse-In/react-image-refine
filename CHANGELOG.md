@@ -1,3 +1,13 @@
+## 0.2.4 (2024-08-30)
+
+### 🩹 Fixes
+
+- provided bumo for minor ([c327df1](https://github.com/HeyanHouse-In/react-image-refine/commit/c327df1))
+
+### ❤️ Thank You
+
+- Jigar Kachhia @HeyanHouse-In
+
 ## 0.2.3 (2024-08-26)
 
 ### 🩹 Fixes
